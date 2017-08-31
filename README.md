@@ -1,5 +1,18 @@
 # Finding neighborhood preserving translations on graphs
 
+## Installation
+
+```
+ocamlopt str.cmxa main.ml -o main.native
+```
+
+Or, if you prefer slow version
+```
+ocamlc str.cma main.ml -o main.bytecode
+```
+
+## Usage
+
 This is an OCaml implementation of the methodology described in [this paper](http://vincent-gripon.com/index.php?p1=100&p2=100&p3=039).
 
 Input is read on stdin. Format is the following: vertices are labelled from 0 to n-1. First line contains n, then each consecutive line contains the list of neighbors of the next vertex (starting from vertex 0) separated by blank spaces.
